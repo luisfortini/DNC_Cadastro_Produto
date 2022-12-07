@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Cadastro de Produto</title>
+  </head>
+  <body>
+    <header>
+      <img src="./images/logo_dnc.png" alt="logo da dnc" />
+      <h1>Cadastro de Produto</h1>
+    </header>
+    <main>
+      <h2>Produtos</h2>
+      <span> Lista de Produtos </span>
+      <div class="card">
+        <div class="input_produto">
+          <label for="nome_produto"> Nome do Produto </label>
+          <input type="text" id="nome_produto" placeholder="Iphone" />
+        </div>
+        <div class="input_produto">
+          <label for="preco_produto"> Preço do Produto </label>
+          <input type="number" id="preco_produto" placeholder="R$ 0,00" />
+        </div>
+        <button id="btn_adicionar" onclick="produto.Adicionar()" > Adicionar </button>
+        <button id="btn_cancelar" onclick="produto.Cancelar()"> Cancelar </button>
+      </div>
+      <div class="conteudo">
+        <table>
+          <thead>
+            <th>ID</th>
+            <th>Produto</th>
+            <th>Preço</th>
+            <th>Remover</th>
+          </thead>
+          <tbody id="body_table">
+            
+          </tbody>
+        </table>
+
+
+      </div>
+    </main>
+  <script src="./script.js"></script>
+  </body>
+</html>
